@@ -63,20 +63,39 @@ async def show_random_emojis(message):
     return emoji_message
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/saini_contact_bot")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/Strangerboy27_bot_strangerboy")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/saini_contact_bot"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+3k-1zcJxINYwNGZl"),
+            InlineKeyboardButton(text="📞 Contact", url="https://t.me/Strangerboy27_bot_strangerboy"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+aBB53vou0Z5hZWI1"),
         ],
     ]
 )
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://tinypic.host/images/2025/02/07/IMG_20250207_224444_975.jpg",
-    "https://tinypic.host/images/2025/02/07/DeWatermark.ai_1738952933236-1.png",
+    "https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg",
+    "https://envs.sh/49s.mp4",
+    "https://envs.sh/49r.mp4",
+    "https://envs.sh/499.mp4",
+    "https://i.ibb.co/KjNBPrtk/STRANGER-BOY.jpg",
+    "https://i.ibb.co/LzWTxFb0/STRANGER-BOY.jpg",
+    "https://i.ibb.co/HffWwnB7/STRANGER-BOY.jpg",
+    "https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg",
+    "https://i.ibb.co/zWpD0dp5/STRANGER-BOY.jpg",
+    "https://i.ibb.co/0p3pmkwn/Angel.jpg",
+    "https://i.ibb.co/xSr3Pt8s/photo-2025-04-23-09-49-45-7496450714600734724.jpg",
+    "https://i.ibb.co/7J3WRJb3/photo-2025-04-14-13-58-22-7496450710305767480.jpg",
+    "https://i.ibb.co/sd1BMMJR/photo-2025-04-14-13-58-25-7496450706010800144.jpg",
+"https://i.ibb.co/VY5Bb44T/photo-2025-04-23-09-49-54-7496450701715832900.jpg",
+"https://i.ibb.co/V8MRDLw/photo-2025-04-23-09-49-57-7496450693125898268.jpg",
+"https://i.ibb.co/VWGcwQK5/photo-2025-04-14-13-58-24-7496450688830931016.jpg",
+"https://i.ibb.co/zHDXdtCk/photo-2025-04-14-13-58-31-7496450675946029068.jpg",
+"https://i.ibb.co/bg9w4H3c/photo-2025-04-23-09-50-06-7496450663061127228.jpg",
+"https://i.ibb.co/200yz6vQ/photo-2025-04-14-13-58-28-7496450658766159936.jpg",
+"https://envs.sh/499.mp4",
+    "https://i.ibb.co/DgRpQhw6/photo-2025-04-30-11-42-22-7499070258104238100.jpg",
     # Add more image URLs as needed
 ]
 
@@ -246,7 +265,7 @@ async def restart_handler(_, m):
 async def start_command(bot: Client, message: Message):
     random_image_url = random.choice(image_urls)
     caption = (
-        "𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!\n\n➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭\n\n➠ Can Extract Videos & PDFs From Your Text File and Upload to Telegram!\n\n➠ For Guide Use Command /help 📖\n\n➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🦁"
+        "𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!\n\n➠ 𝐈 𝐚𝐦 𝐚  STRANGER 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭\n\n➠ Can Extract Videos & PDFs From Your Text File and Upload to Telegram!\n\n➠ For Guide Use Command /help 📖\n\n➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 ➺꯭ ꯭𝅥‌꯭𝆬‌🦋⃪꯭ ─‌⃛┼ 𝞄⃕𝖋𝖋 समय यात्री Sᴛʀᴀɴɢᴇʀ ʙᴏʏs THE BOYS🥵⃝⃝ᬽ꯭ ⃪꯭ "
     )
     await bot.send_photo(
         chat_id=message.chat.id,
@@ -283,10 +302,10 @@ async def info(bot: Client, update: Message):
 @bot.on_message(filters.command(["help"]))
 async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
-        f"🎉Congrats! You are using 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎:\n\n"
+        f"🎉Congrats! You are using [STRANGER](https://i.ibb.co/dwc7VnGQ/photo-2025-04-17-12-32-29-7494259035739258904.jpg):\n\n"
         f"✦**Available Commands Here**✦\n\n"
         f"┣⪼01. /start - To Alive Check Bot \n"
-        f"┣⪼02. /drm - for extract txt file\n"
+        f"┣⪼02. /ISHQ - for extract txt file\n"
         f"┣⪼03. /y2t - YouTube to .txt Convert\n"
         f"┣⪼04. /t2t - text to .txt Convert\n"
         f"┣⪼05. /logs - To see Bot Working Logs\n"
@@ -295,7 +314,7 @@ async def txt_handler(client: Client, m: Message):
         f"┣⪼08. /info - Your information.\n"
         f"┣⪼09. /stop - Stop the Running Task. 🚫\n"
         f"╰⪼🔗  Direct Send Link For Extract (with https://)\n\n"
-        f"**If you have any questions, feel free to ask [𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦](https://t.me/+MdZ2996M2G43MWFl)! 💬**\n"
+        f"**If you have any questions, feel free to ask [𝙎TRANGER](https://t.me/+aBB53vou0Z5hZWI1)! 🤷‍♂️**\n"
         )
     ) 
 
@@ -309,9 +328,9 @@ async def send_logs(client: Client, m: Message):  # Correct parameter name
     except Exception as e:
         await m.reply_text(f"Error sending logs: {e}")
 
-@bot.on_message(filters.command(["drm"]) )
+@bot.on_message(filters.command(["CRUSH"]) )
 async def txt_handler(bot: Client, m: Message):
-    editable = await m.reply_text(f"`🔹Hi I am Poweful TXT Downloader📥 Bot.\n🔹Send me the txt file and wait.`")
+    editable = await m.reply_text(f"`🙋Hi I am Poweful TXT Downloader📥 Bot.\n🤳Send me the txt file and wait.`")
     input: Message = await bot.listen(editable.chat.id)
     y = await input.download()
     await input.delete(True)
@@ -353,12 +372,12 @@ async def txt_handler(bot: Client, m: Message):
         os.remove(x)
         return
     
-    await editable.edit(f"`🔹Total 🔗 links found are {len(links)}\n\n🔹Img : {img_count}  🔹PDF : {pdf_count}\n🔹ZIP : {zip_count}  🔹Other : {other_count}\n\n🔹Send From where you want to download.`")
+    await editable.edit(f"`💾 Total 🔗 links found are {len(links)}\n\n🎇 Img : {img_count}  👝 PDF : {pdf_count}\n🪗 ZIP : {zip_count}  🛍 Other : {other_count}\n\n👘 Send From where you want to download.`")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
            
-    await editable.edit("`🔹Enter Your Batch Name\n🔹Send 1 for use default.`")
+    await editable.edit("`🤷‍♂️ Enter Your Batch Name\n🙆‍♂️ Send 1 for use default.`")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
@@ -367,7 +386,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n╰━━⌈⚡[`🦋🇸‌🇦‌🇮‌🇳‌🇮‌🦋`]⚡⌋━━➣")
+    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n╰━━⌈⚡[`🦋SAMAY🙅YATRI🦋`](https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg)⚡⌋━━➣")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     quality = f"{raw_text2}p"
@@ -390,21 +409,21 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
 
-    await editable.edit("`🔹Enter Your Name\n🔹Send 1 for use default`")
+    await editable.edit("`🙋Enter Your Name\n🤷‍♂️Send 1 for use default`")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
     if raw_text3 == '1':
-        CR = '[𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦](https://t.me/+MdZ2996M2G43MWFl)'
+        CR = '[SAMAY🤷‍♂️YATRI](https://t.me/+aBB53vou0Z5hZWI1)'
     else:
         CR = raw_text3
 
-    await editable.edit("__**🔹Enter Your PW Token For 𝐌𝐏𝐃 𝐔𝐑𝐋, for default Send anything**__")
+    await editable.edit("__**🙆‍♂️Enter Your PW Token For 𝐌𝐏𝐃 𝐔𝐑𝐋, for default Send anything**__")
     input4: Message = await bot.listen(editable.chat.id)
     raw_text4 = input4.text
     await input4.delete(True)
 
-    await editable.edit(f"Send the Video Thumb URL (e.g., https://envs.sh/GV0.jpg) for default thumbnail /d \n\n<i>You can direct upload thumb\nFor document format send : No</i>", disable_web_page_preview=True)
+    await editable.edit(f"Send the Video Thumb URL (e.g., https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg) for default thumbnail /d \n\n<i>You can direct upload thumb\nFor document format send : No</i>", disable_web_page_preview=True)
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -418,7 +437,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         thumb = raw_text6
     await editable.delete()
-    await m.reply_text(f"`🎯Target Batch : {b_name}`")
+    await m.reply_text(f"`🖥Target Batch : {b_name}`")
 
     failed_count = 0
     count =int(raw_text)    
@@ -501,12 +520,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'**❖────[『 WELCOME STRANGER 』](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)──────❖**\n**🤷‍♂️─💗─❤️‍🔥──🖤─❖ {str(count).zfill(3)} ❖─🖤─💝─💔─🤷‍♂️**\n\n**🎞️ Title :** `{name1} [{res}] .mkv`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** [{CR}](https://i.ibb.co/k61P1DCQ/photo-2025-05-02-16-59-50-7499894200335335468.jpg)'
-                cc1 = f'**❖────[『 WELCOME STRANGER 』](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)──────❖**\n**──────❖ {str(count).zfill(3)} ❖────**\n\n**📁 Title :** `{name1} .pdf`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** [{CR}](https://i.ibb.co/k61P1DCQ/photo-2025-05-02-16-59-50-7499894200335335468.jpg)'
-                cczip = f'**❖────[『 WELCOME STRANGER 』](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)──────❖**\n**──────❖ {str(count).zfill(3)} ❖────**\n\n**📁 Title :** `{name1} .zip`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** [{CR}](https://i.ibb.co/k61P1DCQ/photo-2025-05-02-16-59-50-7499894200335335468.jpg)'
-                ccimg = f'**❖────[『 WELCOME STRANGER 』](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)──────❖**\n**──────❖ {str(count).zfill(3)} ❖────**\n\n**🖼️ Title :** `{name1} .jpg`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** [{CR}](https://i.ibb.co/k61P1DCQ/photo-2025-05-02-16-59-50-7499894200335335468.jpg)'
-                ccm = f'**❖────[『 WELCOME STRANGER 』](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)──────❖**\n**──────❖ {str(count).zfill(3)} ❖────**\n\n**🎵 Title :** `{name1} .mp3`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** [{CR}](https://i.ibb.co/k61P1DCQ/photo-2025-05-02-16-59-50-7499894200335335468.jpg)'
-                cchtml = f'**❖────[『 WELCOME STRANGER 』](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)──────❖**\n**──────❖ {str(count).zfill(3)} ❖────**\n\n**🌐 Title :** `{name1} .html`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** [{CR}](https://i.ibb.co/k61P1DCQ/photo-2025-05-02-16-59-50-7499894200335335468.jpg)'
+                cc = f'**❖────[『 WELCOME STRANGER 』](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)──────❖**\n**🤷‍♂️─💗─❤️‍🔥──🖤─❖ {str(count).zfill(3)} ❖─🖤─💝─💔─🤷‍♂️**\n\n**🎞️ Title :** `{name1} [{res}] .mkv`\n\n**📚 Course :** ```{b_name}```\n\n**🌟 Extracted By :** [{CR}](https://i.ibb.co/k61P1DCQ/photo-2025-05-02-16-59-50-7499894200335335468.jpg)'
+                cc1 = f'**❖────[『 WELCOME STRANGER 』](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)──────❖**\n**──────❖ {str(count).zfill(3)} ❖────**\n\n**📁 Title :** `{name1} .pdf`\n\n**📚 Course :** ```{b_name}```\n\n**🌟 Extracted By :** [{CR}](https://i.ibb.co/k61P1DCQ/photo-2025-05-02-16-59-50-7499894200335335468.jpg)'
+                cczip = f'**❖────[『 WELCOME STRANGER 』](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)──────❖**\n**──────❖ {str(count).zfill(3)} ❖────**\n\n**📁 Title :** `{name1} .zip`\n\n**📚 Course :** ```{b_name}```\n\n**🌟 Extracted By :** [{CR}](https://i.ibb.co/k61P1DCQ/photo-2025-05-02-16-59-50-7499894200335335468.jpg)'
+                ccimg = f'**❖────[『 WELCOME STRANGER 』](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)──────❖**\n**──────❖ {str(count).zfill(3)} ❖────**\n\n**🖼️ Title :** `{name1} .jpg`\n\n**📚 Course :** ```{b_name}```\n\n**🌟 Extracted By :** [{CR}](https://i.ibb.co/k61P1DCQ/photo-2025-05-02-16-59-50-7499894200335335468.jpg)'
+                ccm = f'**❖────[『 WELCOME STRANGER 』](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)──────❖**\n**──────❖ {str(count).zfill(3)} ❖────**\n\n**🎵 Title :** `{name1} .mp3`\n\n**📚 Course :** ```{b_name}```\n\n**🌟 Extracted By :** [{CR}](https://i.ibb.co/k61P1DCQ/photo-2025-05-02-16-59-50-7499894200335335468.jpg)'
+                cchtml = f'**❖────[『 WELCOME STRANGER 』](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)──────❖**\n**──────❖ {str(count).zfill(3)} ❖────**\n\n**🌐 Title :** `{name1} .html`\n\n**📚 Course :** ```{b_name}```\n\n**🌟 Extracted By :** [{CR}](https://i.ibb.co/k61P1DCQ/photo-2025-05-02-16-59-50-7499894200335335468.jpg)'
                             
                   
                 if "drive" in url:
@@ -608,7 +627,7 @@ async def txt_handler(bot: Client, m: Message):
                            f'╰━━🖇️𝐔𝐫𝐥 » <a href="{url}">__**Api Link**__</a>\n' \
                            f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
                            f"🛑**Send** /stop **to stop process**\n┃\n" \
-                           f"╰━✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ [𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦](https://t.me/+MdZ2996M2G43MWFl)"
+                           f"╰━💗𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 🙆‍♂️ [𝙎AMAY🤷‍♂️YATRI](https://t.me/+aBB53vou0Z5hZWI1)"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_and_decrypt_video(url, cmd, name, appxkey)  
                     filename = res_file  
@@ -637,7 +656,7 @@ async def txt_handler(bot: Client, m: Message):
                            f'╰━━🖇️𝐔𝐫𝐥 » <a href="{url}">__**Api Link**__</a>\n' \
                            f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
                            f"🛑**Send** /stop **to stop process**\n┃\n" \
-                           f"╰━✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ [𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦](https://t.me/+MdZ2996M2G43MWFl)"
+                           f"╰━🚸𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 🙅 [SAMAY🙆‍♂️YATRI](https://t.me/+aBB53vou0Z5hZWI1)"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.decrypt_and_merge_video(mpd, keys_string, path, name, raw_text2)
                     filename = res_file
@@ -666,7 +685,7 @@ async def txt_handler(bot: Client, m: Message):
                            f'╰━━🖇️𝐔𝐫𝐥 » <a href="{url}">__**Api Link**__</a>\n' \
                            f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
                            f"🛑**Send** /stop **to stop process**\n┃\n" \
-                           f"╰━✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ [𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦](https://t.me/+MdZ2996M2G43MWFl)"
+                           f"╰━💝𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 🙋 [STRANGER](https://t.me/+aBB53vou0Z5hZWI1)"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
