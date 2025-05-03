@@ -3,9 +3,10 @@ import time
 import math
 import os
 from pyrogram.errors import FloodWait
+from datetime import datetime,timedelta
 
 class Timer:
-    def init(self, time_between=5):
+    def __init__(self, time_between=5):
         self.start_time = time.time()
         self.time_between = time_between
 
@@ -14,9 +15,6 @@ class Timer:
             self.start_time = time.time()
             return True
         return False
-
-
-from datetime import datetime,timedelta
 
 #lets do calculations
 def hrb(value, digits= 2, delim= "", postfix=""):
@@ -76,7 +74,7 @@ async def progress_bar(current, total, reply, start):
         else:
             perc = f"{current * 100 / total:.1f}%"
             elapsed_time = round(diff)
-            speed = current / elapsed_time
+            speed = current*3 / elapsed_time
             remaining_bytes = total - current
             if speed > 0:
                 eta_seconds = remaining_bytes / speed
@@ -86,29 +84,13 @@ async def progress_bar(current, total, reply, start):
             sp = str(hrb(speed)) + "/s"
             tot = hrb(total)
             cur = hrb(current)
-            bar_length = 11
+            bar_length = 10
             completed_length = int(current * bar_length / total)
             remaining_length = bar_length - completed_length
 
             symbol_pairs = [
-                ("🖤", "💝"),
-                ("💗", "🙅"),
-                ("👻", "💝"),
-                ("😾", "😻"),
-                ("🦝", "🤷‍♂️"),
-                ("◼", "👝"),
-                ("█", "░"),
-                ("🦁", "❤️‍🔥"),
-                ("🐠", "🙆‍♀️"),
-                ("💘", "🤦‍♀️"),
-                ("🐣", "🦉"),
-                ("🙆‍♂️", "🤞"),
-                ("💗", "❤️‍🔥"),
-                ("❇️", "🦋"),
-                ("❤️‍🔥", "🤦‍♀️"),
-                ("🙋", "🙅‍♀️"),
-                ("🦋", "💗")
-                
+                ("▬", "▭"),
+                ("▰", "▱")
             ]
             chosen_pair = random.choice(symbol_pairs)
             completed_symbol, remaining_symbol = chosen_pair
@@ -116,6 +98,6 @@ async def progress_bar(current, total, reply, start):
             progress_bar = completed_symbol * completed_length + remaining_symbol * remaining_length
             
             try:
-                await reply.edit(f'🦋⃪꯭ ─‌⃛┼ 𝞄⃕𝖋𝖋 समय यात्री Sᴛʀᴀɴɢᴇʀ ʙᴏʏs THE BOYS🥵⃝⃝ᬽ꯭ ⃪꯭ \n🙆‍♂️ {progress_bar}\n├👩‍🎓 Progress ➤ | {perc} |\n├👀 Speed ➤ | {sp} |\n├💗 Processed ➤ | {cur} |\n├💬 Size ➤ | {tot} |\n├💢 ETA ➤ | {eta} |\n🦋 Sᴛʀᴀɴɢᴇʀ ʙᴏʏs THE BOYS🥵⃝⃝ᬽ꯭ ⃪꯭ on') 
+                await reply.edit(f'`╭──⌯═════𝐁𝐨𝐭 𝐒𝐭𝐚𝐭𝐢𝐜𝐬══════⌯──╮\n├⚡ {progress_bar}\n├⚙️ Progress ➤ | {perc} |\n├🚀 Speed ➤ | {sp} |\n├📟 Processed ➤ | {cur} |\n├🧲 Size ➤ | {tot} |\n├🕑 ETA ➤ | {eta} |\n╰─═══✨🦋𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🦋✨═══─╯`') 
             except FloodWait as e:
                 time.sleep(e.x)
