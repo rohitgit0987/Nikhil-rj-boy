@@ -89,8 +89,9 @@ async def progress_bar(current, total, reply, start):
             remaining_length = bar_length - completed_length
 
             symbol_pairs = [
-                ("▬", "▭"),
-                ("▬", "▱")
+                ("◾️", "◽️"),
+                ("⚫️", "⚪️"),
+                ("🔴", "🔵")
             ]
             chosen_pair = random.choice(symbol_pairs)
             completed_symbol, remaining_symbol = chosen_pair
